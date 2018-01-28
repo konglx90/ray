@@ -1,0 +1,342 @@
+2018-01-26 16:34:35,883 - ERROR - '足三里'
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 164, in baidu_count_daemon
+    for key in baidu_summary
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 164, in <dictcomp>
+    for key in baidu_summary
+KeyError: '足三里'
+2018-01-27 17:53:58,673 - ERROR - '计异器'
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 164, in baidu_count_daemon
+    for key in baidu_summary
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 164, in <dictcomp>
+    for key in baidu_summary
+KeyError: '计异器'
+2018-01-27 18:11:33,427 - ERROR - '计异器'
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 164, in baidu_count_daemon
+    for key in baidu_summary
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 164, in <dictcomp>
+    for key in baidu_summary
+KeyError: '计异器'
+2018-01-27 18:12:35,710 - ERROR - '计异器'
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 164, in baidu_count_daemon
+    for key in baidu_summary
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 164, in <dictcomp>
+    for key in baidu_summary
+KeyError: '计异器'
+2018-01-27 18:16:51,364 - ERROR - '计异器'
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 164, in baidu_count_daemon
+    for key in baidu_summary
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 164, in <dictcomp>
+    for key in baidu_summary
+KeyError: '计异器'
+2018-01-27 18:18:01,441 - ERROR - '计异器'
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 164, in baidu_count_daemon
+    for key in baidu_summary
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 164, in <dictcomp>
+    for key in baidu_summary
+KeyError: '计异器'
+2018-01-27 20:42:19,970 - ERROR - an integer is required (got type str)
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/crawl.py", line 279, in crawler_daemon
+    ws.send({'knowledge': ans})
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_app.py", line 117, in send
+    if not self.sock or self.sock.send(data, opcode) == 0:
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_core.py", line 236, in send
+    return self.send_frame(frame)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_core.py", line 255, in send_frame
+    data = frame.format()
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 233, in format
+    return frame_header + self._get_masked(mask_key)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 236, in _get_masked
+    s = ABNF.mask(mask_key, self.data)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 262, in mask
+    _d = array.array("B", data)
+TypeError: an integer is required (got type str)
+2018-01-27 20:43:41,388 - ERROR - an integer is required (got type str)
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/crawl.py", line 279, in crawler_daemon
+    ws.send({'knowledge': ans})
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_app.py", line 117, in send
+    if not self.sock or self.sock.send(data, opcode) == 0:
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_core.py", line 236, in send
+    return self.send_frame(frame)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_core.py", line 255, in send_frame
+    data = frame.format()
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 233, in format
+    return frame_header + self._get_masked(mask_key)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 236, in _get_masked
+    s = ABNF.mask(mask_key, self.data)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 262, in mask
+    _d = array.array("B", data)
+TypeError: an integer is required (got type str)
+2018-01-27 20:43:41,507 - ERROR - an integer is required (got type str)
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 172, in baidu_count_daemon
+    ws.send({'summary': summary})
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_app.py", line 117, in send
+    if not self.sock or self.sock.send(data, opcode) == 0:
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_core.py", line 236, in send
+    return self.send_frame(frame)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_core.py", line 255, in send_frame
+    data = frame.format()
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 233, in format
+    return frame_header + self._get_masked(mask_key)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 236, in _get_masked
+    s = ABNF.mask(mask_key, self.data)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 262, in mask
+    _d = array.array("B", data)
+TypeError: an integer is required (got type str)
+2018-01-27 20:44:04,301 - ERROR - an integer is required (got type str)
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 172, in baidu_count_daemon
+    ws.send({'summary': summary})
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_app.py", line 117, in send
+    if not self.sock or self.sock.send(data, opcode) == 0:
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_core.py", line 236, in send
+    return self.send_frame(frame)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_core.py", line 255, in send_frame
+    data = frame.format()
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 233, in format
+    return frame_header + self._get_masked(mask_key)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 236, in _get_masked
+    s = ABNF.mask(mask_key, self.data)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 262, in mask
+    _d = array.array("B", data)
+TypeError: an integer is required (got type str)
+2018-01-27 20:44:04,606 - ERROR - an integer is required (got type str)
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/crawl.py", line 279, in crawler_daemon
+    ws.send({'knowledge': ans})
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_app.py", line 117, in send
+    if not self.sock or self.sock.send(data, opcode) == 0:
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_core.py", line 236, in send
+    return self.send_frame(frame)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_core.py", line 255, in send_frame
+    data = frame.format()
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 233, in format
+    return frame_header + self._get_masked(mask_key)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 236, in _get_masked
+    s = ABNF.mask(mask_key, self.data)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 262, in mask
+    _d = array.array("B", data)
+TypeError: an integer is required (got type str)
+2018-01-27 20:44:12,852 - ERROR - an integer is required (got type str)
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 172, in baidu_count_daemon
+    ws.send({'summary': summary})
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_app.py", line 117, in send
+    if not self.sock or self.sock.send(data, opcode) == 0:
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_core.py", line 236, in send
+    return self.send_frame(frame)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_core.py", line 255, in send_frame
+    data = frame.format()
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 233, in format
+    return frame_header + self._get_masked(mask_key)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 236, in _get_masked
+    s = ABNF.mask(mask_key, self.data)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 262, in mask
+    _d = array.array("B", data)
+TypeError: an integer is required (got type str)
+2018-01-27 20:44:13,099 - ERROR - an integer is required (got type str)
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/crawl.py", line 279, in crawler_daemon
+    ws.send({'knowledge': ans})
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_app.py", line 117, in send
+    if not self.sock or self.sock.send(data, opcode) == 0:
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_core.py", line 236, in send
+    return self.send_frame(frame)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_core.py", line 255, in send_frame
+    data = frame.format()
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 233, in format
+    return frame_header + self._get_masked(mask_key)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 236, in _get_masked
+    s = ABNF.mask(mask_key, self.data)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 262, in mask
+    _d = array.array("B", data)
+TypeError: an integer is required (got type str)
+2018-01-27 20:44:24,128 - ERROR - '计异器'
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in baidu_count_daemon
+    for key in baidu_summary
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in <dictcomp>
+    for key in baidu_summary
+KeyError: '计异器'
+2018-01-27 20:44:24,199 - ERROR - an integer is required (got type str)
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/crawl.py", line 279, in crawler_daemon
+    ws.send({'knowledge': ans})
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_app.py", line 117, in send
+    if not self.sock or self.sock.send(data, opcode) == 0:
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_core.py", line 236, in send
+    return self.send_frame(frame)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_core.py", line 255, in send_frame
+    data = frame.format()
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 233, in format
+    return frame_header + self._get_masked(mask_key)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 236, in _get_masked
+    s = ABNF.mask(mask_key, self.data)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 262, in mask
+    _d = array.array("B", data)
+TypeError: an integer is required (got type str)
+2018-01-27 20:45:40,576 - ERROR - an integer is required (got type str)
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 172, in baidu_count_daemon
+    ws.send({'summary': json.dumps(summary)})
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_app.py", line 117, in send
+    if not self.sock or self.sock.send(data, opcode) == 0:
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_core.py", line 236, in send
+    return self.send_frame(frame)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_core.py", line 255, in send_frame
+    data = frame.format()
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 233, in format
+    return frame_header + self._get_masked(mask_key)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 236, in _get_masked
+    s = ABNF.mask(mask_key, self.data)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 262, in mask
+    _d = array.array("B", data)
+TypeError: an integer is required (got type str)
+2018-01-27 20:45:41,909 - ERROR - an integer is required (got type str)
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/crawl.py", line 279, in crawler_daemon
+    ws.send({'knowledge': ans})
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_app.py", line 117, in send
+    if not self.sock or self.sock.send(data, opcode) == 0:
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_core.py", line 236, in send
+    return self.send_frame(frame)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_core.py", line 255, in send_frame
+    data = frame.format()
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 233, in format
+    return frame_header + self._get_masked(mask_key)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 236, in _get_masked
+    s = ABNF.mask(mask_key, self.data)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 262, in mask
+    _d = array.array("B", data)
+TypeError: an integer is required (got type str)
+2018-01-27 20:49:26,564 - ERROR - '计异器'
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in baidu_count_daemon
+    for key in baidu_summary
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in <dictcomp>
+    for key in baidu_summary
+KeyError: '计异器'
+2018-01-27 20:50:40,738 - ERROR - an integer is required (got type str)
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/crawl.py", line 280, in crawler_daemon
+    ws.send({'knowledge': ans})
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_app.py", line 117, in send
+    if not self.sock or self.sock.send(data, opcode) == 0:
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_core.py", line 236, in send
+    return self.send_frame(frame)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_core.py", line 255, in send_frame
+    data = frame.format()
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 233, in format
+    return frame_header + self._get_masked(mask_key)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 236, in _get_masked
+    s = ABNF.mask(mask_key, self.data)
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_abnf.py", line 262, in mask
+    _d = array.array("B", data)
+TypeError: an integer is required (got type str)
+2018-01-27 20:50:40,746 - ERROR - '计异器'
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in baidu_count_daemon
+    for key in baidu_summary
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in <dictcomp>
+    for key in baidu_summary
+KeyError: '计异器'
+2018-01-27 20:53:20,599 - ERROR - '计异器'
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in baidu_count_daemon
+    for key in baidu_summary
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in <dictcomp>
+    for key in baidu_summary
+KeyError: '计异器'
+2018-01-27 20:54:22,235 - ERROR - '计异器'
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in baidu_count_daemon
+    for key in baidu_summary
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in <dictcomp>
+    for key in baidu_summary
+KeyError: '计异器'
+2018-01-27 20:57:53,222 - ERROR - '计异器'
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in baidu_count_daemon
+    for key in baidu_summary
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in <dictcomp>
+    for key in baidu_summary
+KeyError: '计异器'
+2018-01-27 20:58:54,447 - ERROR - '计异器'
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in baidu_count_daemon
+    for key in baidu_summary
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in <dictcomp>
+    for key in baidu_summary
+KeyError: '计异器'
+2018-01-27 21:00:17,849 - ERROR - '计异器'
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in baidu_count_daemon
+    for key in baidu_summary
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in <dictcomp>
+    for key in baidu_summary
+KeyError: '计异器'
+2018-01-27 21:00:33,177 - ERROR - '计异器'
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in baidu_count_daemon
+    for key in baidu_summary
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in <dictcomp>
+    for key in baidu_summary
+KeyError: '计异器'
+2018-01-27 21:01:27,482 - ERROR - '计异器'
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in baidu_count_daemon
+    for key in baidu_summary
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in <dictcomp>
+    for key in baidu_summary
+KeyError: '计异器'
+2018-01-27 21:01:37,569 - ERROR - '计异器'
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in baidu_count_daemon
+    for key in baidu_summary
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in <dictcomp>
+    for key in baidu_summary
+KeyError: '计异器'
+2018-01-27 21:03:01,468 - ERROR - '计异器'
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in baidu_count_daemon
+    for key in baidu_summary
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in <dictcomp>
+    for key in baidu_summary
+KeyError: '计异器'
+2018-01-27 21:03:19,271 - ERROR - '计异器'
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in baidu_count_daemon
+    for key in baidu_summary
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in <dictcomp>
+    for key in baidu_summary
+KeyError: '计异器'
+2018-01-27 21:04:40,598 - ERROR - '计异器'
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in baidu_count_daemon
+    for key in baidu_summary
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/pmi.py", line 167, in <dictcomp>
+    for key in baidu_summary
+KeyError: '计异器'
+2018-01-27 21:21:22,068 - ERROR - 'list' object has no attribute 'join'
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/crawl.py", line 280, in crawler_daemon
+    ws.send(json.dumps({'knowledge': ans.join('')}))
+AttributeError: 'list' object has no attribute 'join'
+2018-01-27 21:24:21,482 - ERROR - 'list' object has no attribute 'join'
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/crawl.py", line 280, in crawler_daemon
+    ws.send(json.dumps({'knowledge': ans.join('')}))
+AttributeError: 'list' object has no attribute 'join'
+2018-01-27 21:28:36,379 - ERROR - 'list' object has no attribute 'join'
+Traceback (most recent call last):
+  File "/home/kong/kong/MillionHeroAssistant/core/crawler/crawl.py", line 280, in crawler_daemon
+    ws.send(json.dumps({'knowledge': ans.join('')}))
+AttributeError: 'list' object has no attribute 'join'
