@@ -17,20 +17,19 @@
         </li>
       </ul>
       <h3>知识图谱</h3>
-      <p class="konwledge">{{ knowledge }}</p>
+      <!-- show limit 300 words -->
+      <p class="konwledge">{{ knowledge.slice(0, 300) }}</p>
       <h3>百度决策</h3>
       <ul>
         <li v-for="ans in answers">
           {{ ans[0] }} : {{ ans[1] }}
         </li>
-        <li v-if="answers.length > 0" class="t-answer true">肯定答案(**)： {{ answers[0][0] }}</li>
-        <li v-if="answers.length > 0" class="f-answer">否定答案(&nbsp;&nbsp;&nbsp;)： {{ answers[2][0] }}</li>
+        <li v-if="answers.length > 0" :class="`t-answer ${trueFlag ? 'true' : 'false'}`">肯定答案： {{ answers[0][0] }}</li>
+        <li v-if="answers.length > 0" :class="`f-answer ${!trueFlag ? 'true' : 'false'}`">否定答案： {{ answers[2][0] }}</li>
       </ul>
+      <h3>推荐选项</h3>
+      <h1 class="right-answer">{{rightOption}}</h1>
     </section>
-    <footer class="info">
-      <p>Answer</p>
-      <p>Written by <a href="http://evanyou.me">kong</a></p>
-    </footer>
 
     <script>
     // for testing

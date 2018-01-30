@@ -10,3 +10,7 @@ li {
   color: #eee;
   background-color: black;
 }
+
+.right-answer {
+  color: red;
+}

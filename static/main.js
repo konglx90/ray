@@ -13,11 +13,27 @@ var app = new Vue({
     options: [],
     knowledge: '',
     answers: [],
+    trueFlag: true,
   },
 
   watch: {},
 
-  computed: {},
+  computed: {
+    rightOption() {
+      let rightOption = 'A';
+      try {
+        const rightAnswer = this.trueFlag ? this.answers[0][0] : this.answers[2][0];
+        rightOption = {
+          0: 'A',
+          1: 'B',
+          2: 'C',
+        }[this.options.indexOf(rightAnswer)];
+      } catch (e) {
+        console.log(e);
+      }
+      return rightOption;
+    }
+  },
 
   filters: {},
 
@@ -32,23 +48,11 @@ var app = new Vue({
       const data = JSON.parse(msg.data);
       console.log(data);
       this.question = data.question || this.question;
+      this.options = data.options || this.options;
       this.knowledge = data.knowledge || this.knowledge;
       this.answers = data.answers || this.answers;
+      this.trueFlag = data.trueFlag || this.trueFlag;
     };
-
-    // for test
-    // this.question = '第一个网络传播的蠕虫病毒诞生在什么时候?';
-    // this.options = [
-    //   '1988年1月12日',
-    //   '1988年11月2日',
-    //   '1988年12月1日'
-    // ];
-    // this.konwledge = TESTKON;
-    // this.answers = [
-    //   ['1988年1月12日', 19],
-    //   ['1988年11月2日', 14],
-    //   ['1988年12月1日', 1],
-    // ]
   }
 })
 

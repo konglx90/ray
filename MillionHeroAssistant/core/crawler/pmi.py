@@ -120,11 +120,6 @@ def baidu_count(keyword, answers, timeout=5):
             for ans in answers
         }
 
-    # answers_li = list(map(just_keep_none, answers))
-    # summary = {
-    #     ans: count_key_words(resp.text, ans_li)
-    #     for ans, ans_li in zip(answers, answers_li)
-    # }
     summary = {
         ans: resp.text.count(ans)
         for ans in answers
@@ -169,7 +164,7 @@ def baidu_count_daemon(exchage_queue, outputqueue, timeout=5):
             summary_li = sorted(summary.items(), key=operator.itemgetter(1), reverse=True)
 
             # websocket
-            ws.send(json.dumps({'answers': summary_li}))
+            ws.send(json.dumps({'answers': summary_li, 'trueFlag': true_flag}))
 
             if true_flag:
                 recommend = "{0}\n{1}".format(
