@@ -21,6 +21,7 @@ var app = new Vue({
   computed: {
     rightOption() {
       let rightOption = 'A';
+      console.log(this.trueFlag, 'trueFlag');
       try {
         const rightAnswer = this.trueFlag ? this.answers[0][0] : this.answers[2][0];
         rightOption = {
@@ -51,7 +52,7 @@ var app = new Vue({
       this.options = data.options || this.options;
       this.knowledge = data.knowledge || this.knowledge;
       this.answers = data.answers || this.answers;
-      this.trueFlag = data.trueFlag || this.trueFlag;
+      this.trueFlag = data.hasOwnProperty('trueFlag') ? data.trueFlag : this.trueFlag;
     };
   }
 })

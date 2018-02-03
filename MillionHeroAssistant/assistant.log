@@ -347,3 +347,33 @@ Traceback (most recent call last):
   File "/home/kong/kong/ray/MillionHeroAssistant/core/crawler/pmi.py", line 167, in <dictcomp>
     for key in baidu_summary
 KeyError: 'X博士'
+2018-01-31 20:23:16,330 - ERROR - Connection is already closed.
+Traceback (most recent call last):
+  File "main.py", line 250, in main
+    __inner_job()
+  File "main.py", line 229, in __inner_job
+    ws.send(json.dumps({'question': real_question, 'options': answers}))
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_app.py", line 119, in send
+    "Connection is already closed.")
+websocket._exceptions.WebSocketConnectionClosedException: Connection is already closed.
+2018-01-31 20:23:17,179 - ERROR - Connection is already closed.
+Traceback (most recent call last):
+  File "/home/kong/kong/ray/MillionHeroAssistant/core/crawler/pmi.py", line 167, in baidu_count_daemon
+    ws.send(json.dumps({'answers': summary_li, 'trueFlag': true_flag}))
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_app.py", line 119, in send
+    "Connection is already closed.")
+websocket._exceptions.WebSocketConnectionClosedException: Connection is already closed.
+2018-01-31 20:23:17,930 - ERROR - Connection is already closed.
+Traceback (most recent call last):
+  File "/home/kong/kong/ray/MillionHeroAssistant/core/crawler/crawl.py", line 280, in crawler_daemon
+    ws.send(json.dumps({'knowledge': ('').join(ans)}))
+  File "/home/kong/.local/lib/python3.5/site-packages/websocket/_app.py", line 119, in send
+    "Connection is already closed.")
+websocket._exceptions.WebSocketConnectionClosedException: Connection is already closed.
+2018-01-31 20:47:23,350 - ERROR - list index out of range
+Traceback (most recent call last):
+  File "/home/kong/kong/ray/MillionHeroAssistant/core/crawler/crawl.py", line 278, in crawler_daemon
+    ans = kwquery(question)
+  File "/home/kong/kong/ray/MillionHeroAssistant/core/crawler/crawl.py", line 99, in kwquery
+    r = results.find('div').find_all('td')[1].find_all('div')[1]
+IndexError: list index out of range
